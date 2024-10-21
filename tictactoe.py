@@ -20,7 +20,28 @@ def is_board_full():
 
 board = np.zeros((ROWS, COLUMNS))
 
-print(board)
-mark(2,1,2)
-print(board)
-print(is_valid_mark(2,1))
+game_over = False
+
+Turn = 0
+
+while not game_over:
+    if Turn % 2 == 0:
+        #Player 1 turn
+        row = int(input("Player 1: Choose row number (0-2): "))
+        col = int(input("Player 1: Choose col number (0-2): "))
+        if is_valid_mark(row, col): # checking if an already selected square is playied again
+            mark(row, col, 1) 
+        else:
+            Turn -= 1
+
+    else:
+        #Player 2 turn
+        row = int(input("Player 2: Choose row number (0-2): "))
+        col = int(input("Player 2: Choose col number (0-2): "))
+        if is_valid_mark(row, col): # checking if an already selected square is playied again
+            mark(row, col, 2) 
+        else:
+            Turn -= 1 
+
+    Turn += 1
+    print(board)
