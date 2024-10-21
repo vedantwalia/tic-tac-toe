@@ -65,7 +65,7 @@ draw_lines()
 pygame.display.update()
 pygame.time.wait(2000)
 
-""" while not game_over:
+while not game_over:
     if Turn % 2 == 0:
         #Player 1 turn
         row = int(input("Player 1: Choose row number (0-2): "))
@@ -93,7 +93,3 @@ pygame.time.wait(2000)
 
     if game_over == True:
         print("Game Over!!!")
-
-
- """
-
