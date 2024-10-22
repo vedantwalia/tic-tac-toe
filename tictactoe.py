@@ -66,30 +66,36 @@ pygame.display.update()
 pygame.time.wait(2000)
 
 while not game_over:
-    if Turn % 2 == 0:
-        #Player 1 turn
-        row = int(input("Player 1: Choose row number (0-2): "))
-        col = int(input("Player 1: Choose col number (0-2): "))
-        if is_valid_mark(row, col): # checking if an already selected square is playied again
-            mark(row, col, 1) 
-            if is_winning_move(1):
-                game_over = True
-        else:
-            Turn -= 1
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+        if event.type == pygame.MOUSEBUTTONDOWN:
+            if Turn % 2 == 0:
+                #Player 1 turn
+                #row = int(input("Player 1: Choose row number (0-2): "))
+                row = math.floor(event.pos[1]/200)
+                #col = int(input("Player 1: Choose col number (0-2): "))
+                col = math.floor(event.pos[0]/200)
+                if is_valid_mark(row, col): # checking if an already selected square is playied again
+                    mark(row, col, 1) 
+                    if is_winning_move(1):
+                        game_over = True
+                else:
+                    Turn -= 1
 
-    else:
-        #Player 2 turn
-        row = int(input("Player 2: Choose row number (0-2): "))
-        col = int(input("Player 2: Choose col number (0-2): "))
-        if is_valid_mark(row, col): # checking if an already selected square is playied again
-            mark(row, col, 2)
-            if is_winning_move(2):
-                game_over = True
-        else:
-            Turn -= 1 
+            else:
+                #Player 2 turn
+                row = int(input("Player 2: Choose row number (0-2): "))
+                col = int(input("Player 2: Choose col number (0-2): "))
+                if is_valid_mark(row, col): # checking if an already selected square is playied again
+                    mark(row, col, 2)
+                    if is_winning_move(2):
+                        game_over = True
+                else:
+                    Turn -= 1 
 
-    Turn += 1
-    print(board)
+            Turn += 1
+            print(board)
 
     if game_over == True:
         print("Game Over!!!")
