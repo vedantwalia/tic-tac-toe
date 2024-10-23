@@ -104,8 +104,10 @@ while not game_over:
 
             else:
                 #Player 2 turn
-                row = int(input("Player 2: Choose row number (0-2): "))
-                col = int(input("Player 2: Choose col number (0-2): "))
+                #row = int(input("Player 2: Choose row number (0-2): "))
+                row = math.floor(event.pos[1]/200)
+                col = math.floor(event.pos[0]/200)
+                #col = int(input("Player 2: Choose col number (0-2): "))
                 if is_valid_mark(row, col): # checking if an already selected square is played again
                     mark(row, col, 2)
                     if is_winning_move(2):
@@ -116,6 +118,8 @@ while not game_over:
             Turn += 1
             print(board)
             draw_board()
+    if is_board_full():
+        game_over = True
 
     if game_over == True:
         print("Game Over!!!")
@@ -124,5 +128,6 @@ while not game_over:
         window.fill(WHITE)
         draw_lines()
         draw_board()
+        turn = 0
         game_over = False
         pygame.display.update()
