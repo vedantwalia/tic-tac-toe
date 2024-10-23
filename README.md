@@ -24,32 +24,34 @@ This is a simple Tic Tac Toe game built using Python and Pygame. The game allows
 
 ## Installation
 
-	1.	Clone the repository:
+1.	Clone the repository:
 
 ```bash
 git clone https://github.com/yourusername/tic-tac-toe.git
 cd tic-tac-toe
 ```
 
-	2.	Install required libraries:
+2.	Install required libraries:
 You can install the required libraries using pip:
+
 ```bash
 pip install pygame numpy
 ```
 
+3.	Download images:
 
-	3.	Download images:
 Make sure to place the o.png and x.png images in a folder named .images in the root of your project directory. You can use any images for O and X as long as they are appropriately named.
 
 How to Run the Game
 
 	1.	Navigate to the directory containing the game code.
 	2.	Run the game using the following command:
+
 ```bash
 python3 tic_tac_toe.py
 ```
 
-	3.	Follow the on-screen prompts to play the game:
+3.	Follow the on-screen prompts to play the game:
 	•	Player 1 will use “O” and Player 2 will use “X”.
 	•	Click on the grid to make your move.
 
