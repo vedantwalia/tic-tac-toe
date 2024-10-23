@@ -1,5 +1,9 @@
 # Tic Tac Toe Game
-![alt text](.images/output.gif)
+
+<p align="center">
+  <img src=".images/output.gif" alt="Tic Tac Toe Game GIF" />
+</p>
+
 ## Overview
 
 This is a simple Tic Tac Toe game built using Python and Pygame. The game allows two players to take turns marking spaces on a 3x3 grid. The game detects winning conditions and handles draws, making it a fun way to play the classic game on your computer.
