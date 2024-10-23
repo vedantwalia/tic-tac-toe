@@ -10,17 +10,17 @@ This is a simple Tic Tac Toe game built using Python and Pygame. The game allows
 
 ## Features
 
-	•	Two-player gameplay (Player 1 vs. Player 2)
-	•	Visual representation of the game board with images for X and O
-	•	Win detection for rows, columns, and diagonals
-	•	Reset functionality after a game ends
-	•	Simple and intuitive user interface
+    -    Two-player gameplay (Player 1 vs. Player 2)
+	-	Visual representation of the game board with images for X and O
+	-	Win detection for rows, columns, and diagonals
+	-	Reset functionality after a game ends
+	-	Simple and intuitive user interface
 
 ## Requirements
 
-	•	Python 3.x
-	•	Pygame library
-	•	NumPy library
+	-	Python 3.x
+	-	Pygame library
+	-	NumPy library
 
 ## Installation
 
@@ -52,20 +52,20 @@ python3 tic_tac_toe.py
 ```
 
 3.	Follow the on-screen prompts to play the game:
-	•	Player 1 will use “O” and Player 2 will use “X”.
-	•	Click on the grid to make your move.
+    - Player 1 will use “O” and Player 2 will use “X”.
+    - Click on the grid to make your move.
 
 ## Gameplay
 
-	•	Players take turns clicking on the grid to mark their spaces.
-	•	The game will announce the winner when a player has three in a row (horizontally, vertically, or diagonally).
-	•	If the grid is full and no player has won, the game will indicate that it’s a draw.
-	•	After the game ends, the board resets, allowing players to play again.
+    -    Players take turns clicking on the grid to mark their spaces.
+	-	The game will announce the winner when a player has three in a row (horizontally, vertically, or diagonally).
+	-	If the grid is full and no player has won, the game will indicate that it’s a draw.
+	-	After the game ends, the board resets, allowing players to play again.
 
 ## Code Structure
 
-	•	Game Logic: Implemented in the main script, which handles player turns, win conditions, and drawing the game board.
-	•	Graphics: Utilizes Pygame for rendering the game board and player markers.
+	-	Game Logic: Implemented in the main script, which handles player turns, win conditions, and drawing the game board.
+	-	Graphics: Utilizes Pygame for rendering the game board and player markers.
 
 ## Contributing
 
