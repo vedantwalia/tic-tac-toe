@@ -57,15 +57,15 @@ python3 tic_tac_toe.py
 
 ## Gameplay
 
-    -    Players take turns clicking on the grid to mark their spaces.
-	-	The game will announce the winner when a player has three in a row (horizontally, vertically, or diagonally).
-	-	If the grid is full and no player has won, the game will indicate that it’s a draw.
-	-	After the game ends, the board resets, allowing players to play again.
+- Players take turns clicking on the grid to mark their spaces.
+- The game will announce the winner when a player has three in a row (horizontally, vertically, or diagonally).
+- If the grid is full and no player has won, the game will indicate that it’s a draw.
+- After the game ends, the board resets, allowing players to play again.
 
 ## Code Structure
 
-	-	Game Logic: Implemented in the main script, which handles player turns, win conditions, and drawing the game board.
-	-	Graphics: Utilizes Pygame for rendering the game board and player markers.
+- **Game Logic:** Implemented in the main script, which handles player turns, win conditions, and drawing the game board.
+- **Graphics:** Utilizes Pygame for rendering the game board and player markers.
 
 ## Contributing
 
