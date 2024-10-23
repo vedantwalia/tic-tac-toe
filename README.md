@@ -77,6 +77,6 @@ This project is licensed under the MIT License. See the LICENSE file for more de
 
 ## Acknowledgments
 
-	•	Special thanks to the Pygame community for providing the tools and resources to create this game.
+Special thanks to the Pygame community for providing the tools and resources to create this game.
 
 Feel free to modify any sections to better fit your project, add screenshots, or provide additional details about the gameplay!
