@@ -10,17 +10,17 @@ This is a simple Tic Tac Toe game built using Python and Pygame. The game allows
 
 ## Features
 
-    -    Two-player gameplay (Player 1 vs. Player 2)
-	-	Visual representation of the game board with images for X and O
-	-	Win detection for rows, columns, and diagonals
-	-	Reset functionality after a game ends
-	-	Simple and intuitive user interface
+- Two-player gameplay (Player 1 vs. Player 2)
+- Visual representation of the game board with images for X and O
+- Win detection for rows, columns, and diagonals
+- Reset functionality after a game ends
+- Simple and intuitive user interface
 
 ## Requirements
 
-	-	Python 3.x
-	-	Pygame library
-	-	NumPy library
+- Python 3.x
+- Pygame library
+- NumPy library
 
 ## Installation
 
