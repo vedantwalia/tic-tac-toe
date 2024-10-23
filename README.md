@@ -44,8 +44,8 @@ Make sure to place the o.png and x.png images in a folder named .images in the r
 
 How to Run the Game
 
-	1.	Navigate to the directory containing the game code.
-	2.	Run the game using the following command:
+1.	Navigate to the directory containing the game code.
+2.	Run the game using the following command:
 
 ```bash
 python3 tic_tac_toe.py
